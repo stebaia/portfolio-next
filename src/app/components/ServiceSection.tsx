@@ -75,9 +75,12 @@ const Services = () => {
       
       {/* Centering the button */}
       <div className="flex justify-center mt-8">
-        <button className="px-6 py-3 rounded-full bg-white text-black font-bold">
-          Contattami!
-        </button>
+      <button
+            type="submit"
+            className="bg-blue-500 text-white font-bold py-3 px-4 lg:py-4 lg:px-6 rounded-lg  text-lg lg:text-2xl hover:bg-yellow-500 transition duration-300"
+          >
+            Contattami →
+          </button>
       </div>
     </section>
   );

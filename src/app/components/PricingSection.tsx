@@ -17,7 +17,7 @@ const CheckboxIcon = ({ className }: { className?: string }) => (
     const baseStyles = "rounded-md transition-colors duration-200 ease-in-out";
     const fullWidthStyles = fullWidth ? "w-full" : "";
     const sizeStyles = size === "large" ? "px-6 py-3 text-lg" : "px-4 py-2 text-md";
-    const bgStyles = "bg-purple-600 text-white hover:bg-purple-500";
+    const bgStyles = "bg-blue-600 text-white hover:bg-blue-500";
   
     return (
       <button className={`${baseStyles} ${fullWidthStyles} ${sizeStyles} ${bgStyles}`}>
