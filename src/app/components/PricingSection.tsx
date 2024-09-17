@@ -60,6 +60,10 @@ function PricingCard({ theme, name, description, price, period, features }: {
           <p className="text-sm leading-tight">
             {description}
           </p>
+          <p className="text-sm leading-tight">
+            {period}
+          </p>
+         
         </div>
         <div className={`flex flex-col gap-6 ${theme === 'dark' ? 'text-white' : 'text-slate-600'}`}>
           <div className="flex flex-col items-start justify-start gap-4">
@@ -72,9 +76,7 @@ function PricingCard({ theme, name, description, price, period, features }: {
           <span className="text-center text-5xl font-medium">
             {price}
           </span>
-          <span className={`text-sm leading-tight ${theme === 'dark' ? 'text-white' : 'text-slate-600'}`}>
-            /{period}
-          </span>
+          
         </p>
         <Button size="large" fullWidth>
           Buy Now
@@ -91,52 +93,53 @@ export default function PricingSection() {
 >
       <div className="flex flex-col gap-3 text-center">
         <h2 className="text-4xl font-semibold">
-          Choose your plan
+         Scegli il tuo piano
         </h2>
-        <p className=" text-slate-600">
-          Unlimited combinations for you to build better products faster.
+        <p className=" text-slate-400">
+          Avrai tutte le opzioni per creare l'app o il sito dei tuoi sogni
         </p>
       </div>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <PricingCard
           theme="dark"
-          name="Basic"
-          description="For businesses that are small to medium-sized and have a narrower target market."
-          period="month"
-          price="$0"
+          name="Starter"
+          description="Ideale per startup o singoli imprenditori che desiderano lanciare la loro prima app mobile."
+          period="3 giorni"
+          price="270€"
           features={[
-            '5 products',
-            'Up to 1,000 subscribers',
-            'Basic analytics',
-            '48-hour support response time'
+            '5 Schermate',
+            'UI / UX personalizzata',
+            'Contenuti statici',
+            'Supporto post-sviluppo'
           ]}
         />
         <PricingCard
           theme="dark"
-          name="Professional"
-          description="For bigger, more vibrant companies with over 100,000 active users."
-          period="month"
-          price="$99"
+          name="Business"
+          description="Per aziende che vogliono scalare il loro business con un'app mobile"
+          period="2+ settimane"
+          price="897€"
           features={[
-            '10 products',
-            'Up to 10,000 subscribers',
-            'Advanced analytics',
-            '24-hour support response time'
+            'Sviluppo fino a 10 schermate',
+            'Integrazione limitata API esterne',
+            'UI / UX personalizzata',
+            'Supporto post-sviluppo'
           ]}
         />
         <PricingCard
           theme="dark"
           name="Enterprise"
-          description="For significant organizations with millions of monthly transactions."
-          period="month"
-          price="$199"
+          description="Per visionari che vogliono una soluzione all'avanguardia."
+          period="1+ Mese"
+          price="Preventivo"
           features={[
-            'Unlimited products',
-            'Unlimited subscribers',
-            'Advanced analytics',
-            '12-hour support response time',
-            'Custom integrations',
-            'Custom API development'
+            'Sviluppo personalizzato illimitato',
+            'Integrazioni avanzate API e database',
+            'Nessuna limitazione di librerie',
+            'UI / UX personalizzata',
+            'UI / UX personalizzata',
+            'Analytics avanzati',
+            'Supporto post-sviluppo'
           ]}
         />
       </div>

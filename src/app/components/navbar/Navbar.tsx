@@ -3,22 +3,28 @@
 import exp from "constants";
 import Link from "next/link";
 import React, { useState } from "react";
-import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import MenuOverlay from "./MenuOverlay";
+import MenuOverlay from "../MenuOverlay";
+import Image from 'next/image';
+import NavLink from "./NavLink";
+
 
 const navLinks = [
     {
+      title: "Home",
+      path: "/",
+    },
+    {
       title: "About",
-      path: "#about",
+      path: "/about",
     },
     {
       title: "Projects",
-      path: "#projects",
+      path: "/projects",
     },
     {
       title: "Contact",
-      path: "#contact",
+      path: "/contact",
     },
   ];
 
@@ -32,7 +38,12 @@ const navLinks = [
             href={"/"}
             className="text-2xl md:text-5xl text-white font-semibold"
           >
-            LOGO
+           <Image
+              src="/images/logo.png" // Update the path to your logo image file
+              alt="Logo"
+              width={60}  // Set the width of the logo
+              height={30}  // Set the height of the logo
+            />
           </Link>
           <div className="mobile-menu block md:hidden">
             {!navbarOpen ? (

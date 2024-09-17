@@ -77,7 +77,7 @@ const Services = () => {
       <div className="flex justify-center mt-8">
       <button
             type="submit"
-            className="bg-blue-500 text-white font-bold py-3 px-4 lg:py-4 lg:px-6 rounded-lg  text-lg lg:text-2xl hover:bg-yellow-500 transition duration-300"
+            className="bg-blue-500 text-white font-bold py-3 px-4 lg:py-4 lg:px-6 rounded-lg  text-lg lg:text-2xl hover:bg-blue-400 transition duration-300"
           >
             Contattami →
           </button>

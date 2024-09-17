@@ -3,24 +3,21 @@ import React from 'react';
 const JoinForm = () => {
   return (
     <div className="flex flex-col items-center justify-center lg:p-16 max-w-md lg:max-w-2xl mx-auto">
-      <div className="bg-blue-600 text-white  font-bold py-3 px-6 rounded-t-lg text-center w-full text-xl lg:text-3xl">
+      <div className="bg-blue-600 text-white  font-bold py-3 px-6 rounded-t-lg text-center w-full text-xl lg:text-2xl">
         Il tuo Developer di fiducia
       </div>
-      <div className="p-8 bg-[#121212]  lg:p-16 rounded-b-lg text-white w-full">
-        <h2 className="text-2xl lg:text-4xl font-bold mb-6 lg:mb-10">Hai bisogno di una mano?</h2>
+      <div className="p-8 bg-[#121212] rounded-b-lg text-white w-full">
+        <h2 className="text-xl lg:text-2xl font-bold mb-2 lg:mb-4">Prenota subito una consulenza gratuita</h2>
+        <p className='mb-4'>
+        🚀 Parlami della tua idea o esponi il tuo problema e vediamo come poterlo risolvere!
+        </p>
         <form>
-          <div className="mb-6 lg:mb-10">
-            <input
-              type="email"
-              placeholder="eg. john@gmail.com"
-              className="w-full p-4 lg:p-6 border border-gray-600 rounded-lg text-black text-lg lg:text-2xl"
-            />
-          </div>
+          
           <button
-            type="submit"
-            className="bg-blue-500 text-white font-bold py-3 px-4 lg:py-4 lg:px-6 rounded-lg w-full text-lg lg:text-2xl hover:bg-yellow-500 transition duration-300"
+            onClick={() => window.open("https://calendly.com/baiardi10/30min", "_blank")}
+            className="bg-blue-500 text-white font-bold py-3 px-4 lg:py-4 lg:px-6 rounded-lg w-full  lg:text-xl hover:bg-blue-400 transition duration-300"
           >
-            Contattami →
+            Prenota ora →
           </button>
         </form>
       </div>
