@@ -96,7 +96,7 @@ export default function PricingSection() {
          Scegli il tuo piano
         </h2>
         <p className=" text-slate-400">
-          Avrai tutte le opzioni per creare l'app o il sito dei tuoi sogni
+          Avrai tutte le opzioni per creare l&apos;app o il sito dei tuoi sogni
         </p>
       </div>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -129,7 +129,7 @@ export default function PricingSection() {
         <PricingCard
           theme="dark"
           name="Enterprise"
-          description="Per visionari che vogliono una soluzione all'avanguardia."
+          description="Per visionari che vogliono una soluzione all&apos;avanguardia."
           period="1+ Mese"
           price="Preventivo"
           features={[
