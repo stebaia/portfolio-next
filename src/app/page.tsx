@@ -1,6 +1,6 @@
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/navbar/Navbar";
-import ProjectScrollSection from "./components/ProjectScrollSection";
+import ProjectScrollSection from "./components/project/ProjectScrollSection";
 import Services from "./components/ServiceSection";
 import PricingSection from "./components/PricingSection";
 import TextInfoSection from "./components/TextInfoSection";
