@@ -46,7 +46,7 @@ const AboutShortSection = () => {
         <div>
           <h2 className="text-4xl font-bold mb-4">Chi sono</h2>
           <p className="text-base md:text-lg mb-4">
-          Ciao! Io mi chiamo Stefano Baiardi e sono uno sviluppatore/freelance da molti anni, sono un'amante della programmazione e della tecnologia.
+          Ciao! Io mi chiamo Stefano Baiardi e sono uno sviluppatore/freelance da molti anni, sono un&apos;amante della programmazione e della tecnologia.
             Ho diversi canali social e ancora faccio fatica a etichettarmi come content creator, sono un bel mix di cose, lo so!
             Però se sei atterato su questo sito e hai bisogno di un App, un sito oppure di una consulenza allora io sono il tuo uomo!          </p>
           <div className="flex flex-row mt-8">
