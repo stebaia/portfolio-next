@@ -11,17 +11,17 @@ export default function TextInfoSection({ paragraph, imageUrl }: { paragraph: st
 
   const words = paragraph.split(" ");
   return (
-    <div className="flex flex-wrap items-center justify-center">
+    <div className="flex flex-wrap items-center justify-center pb-60">
       {/* Image Section */}
-      <div className="w-full md:w-1/2 flex justify-center md:justify-end pr-4">
+      <div className="w-full md:w-1/2 flex justify-center  pr-8">
         <img src={imageUrl} alt="yoocoding" className="w-full max-w-sm object-cover rounded-lg shadow-lg" />
       </div>
 
       {/* Text Section */}
-      <div className="w-full md:w-1/2">
+      <div className="w-full md:w-1/2 justify-center">
         <p
           ref={container}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-relaxed font-bold opacity-90 pb-60" // Added transparency and bottom padding
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-relaxed font-bold opacity-90pb-60" // Added transparency and bottom padding
         >
           {
             words.map((word, i) => {

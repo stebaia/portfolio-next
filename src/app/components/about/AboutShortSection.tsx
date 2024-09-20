@@ -42,12 +42,13 @@ const AboutShortSection = () => {
   return (
     <section>
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 xl:gap-16 sm:py-16">
-        <Image src='/images/avatar.jpg' width={500} height={500} alt='avatar' className='mb-10'/>
+        <Image src='/images/profilo2.jpg' width={500} height={500} alt='avatar' className='mb-10'/>
         <div>
           <h2 className="text-4xl font-bold mb-4">Chi sono</h2>
           <p className="text-base md:text-lg mb-4">
-            Un breve riassunto delle mie competenze e delle mie esperienze.
-          </p>
+          Ciao! Io mi chiamo Stefano Baiardi e sono uno sviluppatore/freelance da molti anni, sono un'amante della programmazione e della tecnologia.
+            Ho diversi canali social e ancora faccio fatica a etichettarmi come content creator, sono un bel mix di cose, lo so!
+            Però se sei atterato su questo sito e hai bisogno di un App, un sito oppure di una consulenza allora io sono il tuo uomo!          </p>
           <div className="flex flex-row mt-8">
             <TabButton active={tab === 'skills'} selectTab={() => handleTabChange('skills')}>Skills</TabButton>
             <TabButton active={tab === 'experience'} selectTab={() => handleTabChange('experience')}>Esperienze</TabButton>
