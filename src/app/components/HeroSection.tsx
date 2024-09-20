@@ -16,7 +16,7 @@ const HeroSection = () => {
             <div className="grid grid-cols-1 lg:grid-cols-12 mt-24  mx-auto px-12 py-12 ">
                 
                 <div className="col-span-7 place-self-center text-center sm:text-left">
-                    <h1 className="mb-4 text-6xl sm:text-5xl lg:text-8xl font-extrabold">
+                    <h1 className="mb-4 text-5xl sm:text-6xl lg:text-8xl font-extrabold">
                     <p className="text-white text-base ">
                     ⭐⭐⭐⭐⭐ +200 recensioni
                     </p>
@@ -24,18 +24,17 @@ const HeroSection = () => {
                     Trasformo le tue idee in realtà.
                     </p>
                         <span className="text-transparent bg-clip-text bg-blue-500 hover:bg-slate-200">
-                            Ciao sono{" "}
+                            Ciao sono un{" "}
                         </span>
                         <br />
                         <TypeAnimation
                             sequence={[
-                                'Stefano',
+                                
+                                'Developer',
                                 1000,
-                                'un Developer',
+                                'Freelancer',
                                 1000,
-                                'un Freelancer',
-                                1000,
-                                'uno Youtuber',
+                                'Youtuber',
                                 1000,
                             ]}
                             wrapper="span"

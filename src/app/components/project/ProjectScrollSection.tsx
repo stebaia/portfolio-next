@@ -29,7 +29,7 @@ const HorizontalScrollCarousel: React.FC = () => {
 
   return (
     <section ref={targetRef} className="relative h-[180vh] ">
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden mx-10 my-10">
+      <div className="sticky top-0 flex h-screen items-center overflow-hidden ">
         <motion.div style={{ x }} className="flex gap-4">
           <IntroCard />
           {projects.map((project, index) => {
@@ -44,7 +44,7 @@ const HorizontalScrollCarousel: React.FC = () => {
 
 const IntroCard: React.FC = () => {
   return (
-    <div className="h-[300px] w-[300px] md:h-[300px] md:w-[300px] lg:h-[800px] lg:w-[800px] bg-black flex items-center justify-center">
+    <div className="h-[500px] w-[500px] md:h-[300px] md:w-[300px] lg:h-[800px] lg:w-[800px] bg-black flex items-center justify-center">
       <p className="text-4xl md:text-6xl font-black uppercase text-white text-center">
         I miei progetti
       </p>
@@ -54,7 +54,7 @@ const IntroCard: React.FC = () => {
 
 const OutroCard: React.FC = () => {
   return (
-    <Link href="/projects" className="group relative h-[300px] w-[300px] md:h-[300px] md:w-[300px] lg:h-[800px] lg:w-[800px] bg-black flex items-center justify-center">
+    <Link href="/projects" className="group relative h-[500px] w-[500px] md:h-[300px] md:w-[300px] lg:h-[800px] lg:w-[800px] bg-black flex items-center justify-center">
       <p className="text-4xl md:text-6xl font-black uppercase text-white text-center group-hover:scale-110 transition-transform duration-300">
         Scoprili tutti
       </p>
@@ -66,7 +66,7 @@ const Card: React.FC<CardProps> = ({ project }) => {
   return (
     <div
       key={project.title}
-      className="group relative h-[300px] w-[300px] overflow-hidden md:h-[300px] md:w-[300px] lg:h-[800px] lg:w-[800px]"
+      className="group relative h-[500px] w-[500px] overflow-hidden md:h-[300px] md:w-[300px] lg:h-[800px] lg:w-[800px]"
       style={{ backgroundImage: `url(${project.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <div className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"></div>

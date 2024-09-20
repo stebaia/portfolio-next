@@ -18,7 +18,10 @@ export default function Home() {
       <div className="container mt-24  mx-auto px-12 py-12">
         {/*  */}
         <TextInfoSection paragraph="Amo sviluppare App e Siti Web e mi diverto a farli nella maniera migliore e più funzionale possibile." imageUrl={"/images/work.jpg"}/>
-      <Services/>
+      
+      </div>
+      <div className="md:px-12 md:py-12">
+        <Services/>
       </div>
       <ProjectScrollSection/>
       <div className="container mt-24  mx-auto px-12 py-12">

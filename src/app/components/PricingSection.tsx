@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 
 const CheckboxIcon = ({ className }: { className?: string }) => (
@@ -20,7 +21,7 @@ const CheckboxIcon = ({ className }: { className?: string }) => (
     const bgStyles = "bg-blue-600 text-white hover:bg-blue-500";
   
     return (
-      <button className={`${baseStyles} ${fullWidthStyles} ${sizeStyles} ${bgStyles}`}>
+      <button className={`${baseStyles} ${fullWidthStyles} ${sizeStyles} ${bgStyles}`} onClick={() => window.open("https://calendly.com/baiardi10/30min", "_blank")}>
         {children}
       </button>
     );
@@ -79,7 +80,7 @@ function PricingCard({ theme, name, description, price, period, features }: {
           
         </p>
         <Button size="large" fullWidth>
-          Buy Now
+          Contattami
         </Button>
       </div>
     </div>
