@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Yoocoding",
+  title: "Yoocoding - Il tuo developer di fiducia",
   description: "il tuo developer di fiducia",
 };
 
