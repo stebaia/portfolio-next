@@ -109,7 +109,7 @@ export default function PricingSection() {
           price="270€"
           features={[
             '5 Schermate',
-            'UI / UX personalizzata',
+            'UI / UX Base',
             'Contenuti statici',
             'Supporto post-sviluppo'
           ]}
@@ -123,7 +123,7 @@ export default function PricingSection() {
           features={[
             'Sviluppo fino a 10 schermate',
             'Integrazione limitata API esterne',
-            'UI / UX personalizzata',
+            'UI / UX Base',
             'Supporto post-sviluppo'
           ]}
         />
@@ -137,9 +137,8 @@ export default function PricingSection() {
             'Sviluppo personalizzato illimitato',
             'Integrazioni avanzate API e database',
             'Nessuna limitazione di librerie',
-            'UI / UX personalizzata',
-            'UI / UX personalizzata',
-            'Analytics avanzati',
+            'UI / UX Personalizzata',
+            'Analytics e rapporti sulle performance',
             'Supporto post-sviluppo'
           ]}
         />
